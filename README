@@ -1,0 +1,19 @@
+For the final leaderboard
+
+1) To start the pretraining for MoCo (v2):
+
+sbatch 2gpu_pretrain_final.sbatch
+
+2) To start finetuning for MoCo (v2):
+
+sbatch finetune.sbatch
+
+3) To select unsupervised examples :
+
+First copy the model (the one sent separately) to this folder, then 
+
+sbatch request_label.sbatch
+
+4) To start finetuning for MoCo (v2) with extra labels:
+
+sbatch finetune_extra.sbatch
